@@ -6,6 +6,8 @@ import Predictions from './components/Predictions.js';
 import AllClasses from './components/AllClasses.js';
 
 
+
+
 class App extends React.Component {
     constructor(props){
 	    super(props)
@@ -16,6 +18,7 @@ class App extends React.Component {
     }
 
     componentDidMount(){
+
     }
 
     render() {
@@ -25,7 +28,7 @@ class App extends React.Component {
         		component = <Start/>
                 break;
             case 1:
-				component = <Camera/>
+				component = <Camera storage={this.props.storage}/>
                 break;
             case 2:
 				component = <Predictions/>

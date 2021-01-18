@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase/app'
+import 'firebase/storage'
+
+var firebaseConfig = {
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+	storageBucket: process.env.REACT_APP_FIREBASE_STOREAGE_BUCKET
+  };
+  firebase.initializeApp(firebaseConfig);
+  var storage = firebase.storage();
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App storage={storage}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

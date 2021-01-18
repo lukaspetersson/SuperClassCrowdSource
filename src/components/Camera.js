@@ -23,7 +23,6 @@ class Camera extends React.Component {
 	  var filename = "test.jpg";
     var storageRef = this.props.storage.ref('/images/' + filename);
 
-    //var message = 'data:image/jpg;base64,' + dataUri;
     storageRef.putString(dataUri, 'data_url').then(function (snapshot) {
         console.log('Uploaded a data_url string!');
     });

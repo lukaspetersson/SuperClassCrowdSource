@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import firebase from 'firebase/app'
 import 'firebase/storage'
 
+
 var firebaseConfig = {
 	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 	storageBucket: process.env.REACT_APP_FIREBASE_STOREAGE_BUCKET

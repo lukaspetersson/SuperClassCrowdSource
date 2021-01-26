@@ -1,0 +1,20 @@
+.cam{
+	position: relative;
+}
+
+.body{
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: white;
+	font-family: monospace
+
+}
+
+h1, h3{
+	margin: 10px;
+}

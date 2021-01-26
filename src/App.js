@@ -25,6 +25,10 @@ class App extends React.Component {
 		this.uuidv4 = this.uuidv4.bind(this);
     }
 
+	componentDidMount(){
+    document.title = "SuperClass"
+  }
+
 	setLabel(label) {
 		this.setState({
 			label: label

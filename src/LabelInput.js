@@ -135,7 +135,8 @@ const labels = [
 	"rödkål",
 	"savoykol",
 	"spetskål",
-	"viktkål"]
+	"viktkål",
+	"Avokado"]
 
 class LabelInput extends React.Component {
 

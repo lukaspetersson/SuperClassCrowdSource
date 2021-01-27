@@ -102,7 +102,7 @@ class App extends React.Component {
 							isImageMirror = {false}
 							idealFacingMode ={FACING_MODES.ENVIRONMENT}
 							imageType = {IMAGE_TYPES.JPG}
-							idealResolution = {{width: 224, height: 224}}
+							idealResolution = {{width: 512, height: 512}}
 							onTakePhoto = { (dataUri) => { this.handleTakePhoto(dataUri); } }
 						/>
 					: <></>
